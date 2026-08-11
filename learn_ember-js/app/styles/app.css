@@ -459,14 +459,13 @@ p {
   position: relative;
 }
 
-.tomster {
-  background: url("/assets/images/teaching-tomster.png");
+.manifesto {
+  background: url("/assets/images/manifesto.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
   width: 200px;
   position: relative;
-  top: -25px;
 }
 
 .screen-reader {
