@@ -1,5 +1,6 @@
 import { LinkTo } from '@ember/routing';
 import Jumbo from 'learn-ember-js/components/jumbo';
+import Application from 'learn-ember-js/components/application';
 
 <template>
   <Jumbo>
@@ -15,4 +16,11 @@ import Jumbo from 'learn-ember-js/components/jumbo';
     </p>
     <LinkTo @route="about" class="button">À propos</LinkTo>
   </Jumbo>
+  <div class="applications">
+    <ul class="results">
+      <li><Application /></li>
+      <li><Application /></li>
+      <li><Application /></li>
+    </ul>
+  </div>
 </template>

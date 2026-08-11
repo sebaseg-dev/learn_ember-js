@@ -122,7 +122,7 @@ p {
   bottom: 5px;
 }
 
-.rentals label span {
+.applications label span {
   font-size: 140%;
   margin: 50px auto 20px;
   display: block;
@@ -130,13 +130,13 @@ p {
   font-style: italic;
 }
 
-.rentals form p {
+.applications form p {
   font-size: 80%;
   display: block;
   text-align: center;
 }
 
-.rentals input {
+.applications input {
   padding: 11px;
   font-size: 18px;
   width: 500px;
@@ -234,7 +234,7 @@ p {
  * Individual Rental Listing
  */
 
-.rental {
+.application {
   margin-top: 15px;
   background-color: #f6f6f6;
   padding: 20px 25px;
@@ -244,22 +244,22 @@ p {
   flex-wrap: wrap;
 }
 
-.rental:hover {
+.application:hover {
   background-color: #f3f3f3;
 }
 
-.rental img {
+.application img {
   border-radius: 5px;
 }
 
-.rental .image {
+.application .image {
   flex-grow: 0;
   flex-basis: 150px;
   margin: 20px 25px;
   text-align: center;
 }
 
-.rental button.image {
+.application button.image {
   position: relative;
   cursor: pointer;
   border: none;
@@ -267,11 +267,11 @@ p {
   z-index: 1;
 }
 
-.rental button.image:focus {
+.application button.image:focus {
   outline: none;
 }
 
-.rental button.image::after {
+.application button.image::after {
   content: "";
   position: absolute;
   top: 0;
@@ -287,21 +287,21 @@ p {
   transition: opacity 0.25s ease-in-out;
 }
 
-.rental button.image:focus::after,
-.rental button.image:hover::after {
+.application button.image:focus::after,
+.application button.image:hover::after {
   opacity: 0.1;
 }
 
-.rental .image img {
+.application .image img {
   max-width: 100%;
 }
 
-.rental .image.large {
+.application .image.large {
   margin: 30px 25px 50px;
   flex-basis: 100%;
 }
 
-.rental .image small {
+.application .image small {
   display: block;
   margin-top: 5px;
   margin-bottom: -15px;
@@ -312,13 +312,13 @@ p {
   position: relative;
 }
 
-.rental .image.large small {
+.application .image.large small {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 110%;
 }
 
-.rental .details {
+.application .details {
   flex-basis: 50%;
   flex-grow: 2;
   display: flex;
@@ -328,109 +328,108 @@ p {
   flex-wrap: wrap;
 }
 
-.rental h3 {
+.application h3 {
   flex-basis: 100%;
 }
 
-.rental h3 a {
+.application h3 a {
   display: inline;
 }
 
-.rental .detail {
+.application .detail {
   flex-basis: 50%;
   font-weight: 300;
-  font-style: italic;
   white-space: nowrap;
 }
 
-.rental .detail span {
+.application .detail span {
   font-weight: 400;
   font-style: normal;
 }
 
-.rental .map {
+.application .map {
   flex-grow: 0;
   flex-basis: 150px;
   font-size: 0;
   margin: 0 25px;
 }
 
-.rental .map img {
+.application .map img {
   width: 150px;
   height: 150px;
 }
 
-.rental.detailed {
+.application.detailed {
   background: none;
   align-items: flex-start;
 }
 
-.rental.detailed .image {
+.application.detailed .image {
   flex-basis: 320px;
 }
 
-.rental.detailed .image.large {
+.application.detailed .image.large {
   margin: 30px 25px 50px;
   flex-basis: 100%;
 }
 
-.rental.detailed .details {
+.application.detailed .details {
   height: auto;
 }
 
-.rental.detailed h3 {
+.application.detailed h3 {
   font-size: 200%;
   margin-bottom: 10px;
 }
 
-.rental.detailed .detail {
+.application.detailed .detail {
   margin: 5px 0;
   flex-basis: 100%;
   flex-shrink: 2;
 }
 
-.rental.detailed .description {
+.application.detailed .description {
   white-space: normal;
   flex-basis: 100%;
   flex-shrink: 1;
 }
 
-.rental.detailed .map {
+.application.detailed .map {
   flex-basis: 100%;
   margin: 50px 25px 25px;
 }
 
-.rental.detailed .map img {
+.application.detailed .map img {
   width: 100%;
   height: auto;
 }
 
 @media only screen and (max-width: 919px) {
-  .rental.detailed .image,
-  .rental.detailed .image.large {
+  .application.detailed .image,
+  .application.detailed .image.large {
     margin: 30px 25px 25px;
     flex-basis: 100%;
     cursor: default;
   }
 
-  .rental.detailed .image:hover {
+  .application.detailed .image:hover {
     flex-basis: 100%;
     cursor: default;
   }
 
-  .rental.detailed .image small {
+  .application.detailed .image small {
     display: none;
   }
 
-  .rental.detailed button.image:hover::after {
+  .application.detailed button.image:hover::after {
     opacity: 0;
   }
 
-  .rental.detailed button.image:focus::after {
+  .application.detailed button.image:focus::after {
     opacity: 0.1;
   }
 
-  .rental.detailed .map {
+  .application.detailed .map {
     margin-top: 25px;
   }
 }

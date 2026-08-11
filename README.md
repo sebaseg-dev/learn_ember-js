@@ -21,4 +21,10 @@ Development server is accessible at: `localhost:4200`
 
 ## Reading notes
 
+Part 1 – Component Basics
+
 ![Part 1 – Components Basics](./assets/tuto_part1_components-basics.webp)
+
+Part 1 – More about components
+
+![Part 1 – More about components](./assets/tuto_part1_components-more.webp)
