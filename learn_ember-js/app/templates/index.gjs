@@ -1,8 +1,8 @@
 import { LinkTo } from '@ember/routing';
+import Jumbo from 'learn-ember-js/components/jumbo';
 
 <template>
-  <div class="jumbo">
-    <div class="right manifesto"></div>
+  <Jumbo>
     <h2>Offpunk</h2>
     <p>
       J'ai découvert récemment la philosophie Offpunk, ainsi qu'un
@@ -14,5 +14,5 @@ import { LinkTo } from '@ember/routing';
       . Ce sera la sujet de ce projet.
     </p>
     <LinkTo @route="about" class="button">À propos</LinkTo>
-  </div>
+  </Jumbo>
 </template>

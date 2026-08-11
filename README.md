@@ -18,3 +18,7 @@ npm start
 ```
 
 Development server is accessible at: `localhost:4200`
+
+## Reading notes
+
+![Part 1 – Components Basics](./assets/tuto_part1_components-basics.webp)

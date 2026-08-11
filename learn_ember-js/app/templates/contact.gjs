@@ -1,8 +1,8 @@
 import { LinkTo } from '@ember/routing';
+import Jumbo from 'learn-ember-js/components/jumbo';
 
 <template>
-  <div class="jumbo">
-    <div class="right manifesto"></div>
+  <Jumbo>
     <h2>Nous contacter</h2>
     <p>
       Nous serions ravis d'avoir de vos nouvelles.
@@ -18,5 +18,5 @@ import { LinkTo } from '@ember/routing';
       <a href="gemini://capsule.com">gemini</a>
     </address>
     <LinkTo @route="about" class="button">À propos</LinkTo>
-  </div>
+  </Jumbo>
 </template>

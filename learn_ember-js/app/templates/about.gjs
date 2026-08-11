@@ -1,8 +1,8 @@
 import { LinkTo } from '@ember/routing';
+import Jumbo from 'learn-ember-js/components/jumbo';
 
 <template>
-  <div class="jumbo">
-    <div class="right manifesto"></div>
+  <Jumbo>
     <h2>À propos</h2>
     <p>
       Ce projet à pour but de suivre le tutoriel d'<a
@@ -12,5 +12,5 @@ import { LinkTo } from '@ember/routing';
       >Ember.js</a>.
     </p>
     <LinkTo @route="contact" class="button">Contact</LinkTo>
-  </div>
+  </Jumbo>
 </template>
