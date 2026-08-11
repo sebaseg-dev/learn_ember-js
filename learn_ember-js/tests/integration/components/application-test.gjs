@@ -17,5 +17,6 @@ module('Integration | Component | application', function (hooks) {
     assert.dom('article .detail.offline').includesText('🟠 permet l\'écoute hors-ligne mais nécessite une reconnexion régulière');
     assert.dom('article .detail.ownership').includesText('🔴 abonnement sans aucun transfert');
     assert.dom('article .image').exists();
+    assert.dom('article .map').exists();
   });
 });

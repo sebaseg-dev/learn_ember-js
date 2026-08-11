@@ -95,3 +95,17 @@ export default class ImageComponent extends Component {
 <small>View {{if this.isLarge "Smaller" "Larger"}}</small>
 ```
 
+### Part 1 – Reusable components
+
+> **L'ordre des attributs est important**
+
+```html
+<img
+    alt="Map image at coordinates {{@lat}},{{@lng}}"
+    ...attributes
+    src="https://api.tomtom.com/map/1/staticimage?key={{this.token}}&zoom={{@zoom}}&center={{@lng}},{{@lat}}&width={{@width}}&height={{@height}}"
+    width={{@width}} height={{@height}}
+>
+```
+
+> dans notre cas ci-dessus, le fait de placer le `alt` avant le `...attributes` permet à `...attributes` d'override `alt`. Cela n'aurait pas été possible dans l'autre cas.
