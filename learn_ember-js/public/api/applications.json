@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "application",
+      "id": "spotify",
+      "attributes": {
+        "title": "Spotify",
+        "overproduction": "🔴 favorise l'IA dans la création musicale",
+        "offline": "🟠 permet l'écoute hors-ligne mais nécessite une reconnexion régulière",
+        "location": {
+          "lat": 59.334591,
+          "lng": 18.063240
+        },
+        "category": "Music",
+        "ownership": "🔴 abonnement sans aucun transfert",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2024_Spotify_Logo.svg/langfr-3840px-2024_Spotify_Logo.svg.png?utm_source=fr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+      }
+    },
+    {
+      "type": "application",
+      "id": "qobuz",
+      "attributes": {
+        "title": "Qobuz",
+        "overproduction": "🟢 curation humaine et interdiction de l'IA",
+        "offline": "🟢 l'écoute offline est une feature centrale",
+        "location": {
+          "lat": 48.894533,
+          "lng": 2.409630
+        },
+        "category": "Music",
+        "ownership": "🟢 permet l'achat de musique en plus du streaming",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Qobuz_logo_light.svg/langfr-330px-Qobuz_logo_light.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+        "description": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+      }
+    },
+    {
+      "type": "application",
+      "id": "netflix",
+      "attributes": {
+        "title": "Netflix",
+        "overproduction": "🔴 production industrielle de contenus",
+        "offline": "🔴 limite fortement le visionnage hors-ligne",
+        "location": {
+          "lat": 37.235808,
+          "lng": -121.962375
+        },
+        "category": "Video",
+        "ownership": "🔴 abonnement sans aucun transfert",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/langfr-3840px-Netflix_2015_logo.svg.png?utm_source=fr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+      }
+    }  
+  ]
+}

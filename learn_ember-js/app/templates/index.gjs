@@ -16,11 +16,12 @@ import Application from 'learn-ember-js/components/application';
     </p>
     <LinkTo @route="about" class="button">À propos</LinkTo>
   </Jumbo>
+
   <div class="applications">
     <ul class="results">
-      <li><Application /></li>
-      <li><Application /></li>
-      <li><Application /></li>
+      {{#each @model as |application|}}
+        <li><Application @application={{application}} /></li>
+      {{/each}}
     </ul>
   </div>
 </template>
