@@ -1,34 +1,12 @@
 import Route from '@ember/routing/route';
-
-const APPLICATION_CATEGORIES = ['Music', 'Video', 'Games'];
-
-function toFrench(category) {
-  switch (category) {
-    case 'Music':
-      return '🎵 Musique';
-    case 'Video':
-      return '🎬 Vidéo';
-    case 'Games':
-      return '👾 Jeux';
-    default:
-      return category;
-  }
-}
+import { service } from '@ember/service';
+import { query } from '@warp-drive/utilities/json-api';
 
 export default class IndexRoute extends Route {
+  @service store;
+
   async model() {
-    let response = await fetch('/api/applications.json');
-    let { data } = await response.json();
-
-    return data.map((model) => {
-      let { id, attributes } = model;
-      let type;
-
-      if (APPLICATION_CATEGORIES.includes(attributes.category)) {
-        type = toFrench(attributes.category);
-      }
-
-      return {id, type, ...attributes};
-    });
+    const { content } = await this.store.request(query('application'));
+    return content.data;
   }
 }
