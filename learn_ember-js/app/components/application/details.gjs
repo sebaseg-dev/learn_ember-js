@@ -1,14 +1,19 @@
 import Jumbo from 'learn-ember-js/components/jumbo';
 import RentalImage from 'learn-ember-js/components/application/image';
 import Map from 'learn-ember-js/components/map';
+import ShareButton from 'learn-ember-js/components/share-button';
 
 <template>
   <Jumbo>
       <h2>{{@app.title}}</h2>
       <p>Their HQ are located in {{@app.city}}.</p>
-      <a href="#" target="_blank" rel="external nofollow noopener noreferrer" class="share button">
+      <ShareButton
+        @text="Check out {{@rental.title}} on Super Rentals!"
+        @hashtags="vacation,travel,authentic,blessed,superrentals"
+        @via="emberjs"
+      >
         Share on Twitter
-      </a>
+      </ShareButton>
     </Jumbo>
   
     <article class="application detailed">

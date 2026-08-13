@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL, click } from '@ember/test-helpers';
+import { visit, find, currentURL, click } from '@ember/test-helpers';
 import { setupApplicationTest } from 'learn-ember-js/tests/helpers';
 
 module('Acceptance | learn ember js', function (hooks) {
@@ -35,6 +35,17 @@ module('Acceptance | learn ember js', function (hooks) {
       assert.dom('h1').containsText('Offpunk');
       assert.dom('h2').containsText('Spotify');
       assert.dom('.application.detailed').exists();
+      assert.dom('.share.button').hasText('Share on Twitter');
+      
+      let button = find('.share.button');
+  
+      let tweetURL = new URL(button.href);
+      assert.strictEqual(tweetURL.host, 'twitter.com');
+  
+      assert.strictEqual(
+        tweetURL.searchParams.get('url'),
+        `${window.location.origin}/application/spotify`
+      );
     });
   
   test('visiting /about', async function (assert) {
