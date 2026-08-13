@@ -1,5 +1,6 @@
 import ApplicationImage from './application/image';
 import Map from './map';
+import { LinkTo } from '@ember/routing';
 
 <template>
   <article class="application">
@@ -8,7 +9,11 @@ import Map from './map';
       alt = {{@application.title}}
     />
       <div class="details">
-        <h3>{{@application.title}}</h3>
+        <h3>
+          <LinkTo @route="details" @model={{@application}}>
+            {{@application.title}}
+          </LinkTo>
+        </h3>
         <div class="detail overproduction">
           <span>Sur-production:</span> {{@application.overproduction}}
         </div>

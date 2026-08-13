@@ -19,6 +19,24 @@ module('Acceptance | learn ember js', function (hooks) {
     assert.strictEqual(currentURL(), '/about');
   });
 
+  test('viewing the details of a rental property', async function (assert) {
+      await visit('/');
+      assert.dom('.application').exists({ count: 3 });
+  
+      await click('.application:first-of-type a');
+      assert.strictEqual(currentURL(), '/application/spotify');
+    });
+  
+    test('visiting /application/spotify', async function (assert) {
+      await visit('/application/spotify');
+  
+      assert.strictEqual(currentURL(), '/application/spotify');
+      assert.dom('nav').exists();
+      assert.dom('h1').containsText('Offpunk');
+      assert.dom('h2').containsText('Spotify');
+      assert.dom('.application.detailed').exists();
+    });
+  
   test('visiting /about', async function (assert) {
     await visit('/about');
 

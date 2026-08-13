@@ -15,20 +15,18 @@ function toFrench(category) {
   }
 }
 
-export default class IndexRoute extends Route {
-  async model() {
-    let response = await fetch('/api/applications.json');
+export default class DetailsRoute extends Route {
+  async model(params) {
+    let response = await fetch(`/api/applications/${params.application_id}.json`);
     let { data } = await response.json();
 
-    return data.map((model) => {
-      let { id, attributes } = model;
-      let type;
+    let { id, attributes } = data;
+    let type;
 
-      if (APPLICATION_CATEGORIES.includes(attributes.category)) {
-        type = toFrench(attributes.category);
-      }
+    if (APPLICATION_CATEGORIES.includes(attributes.category)) {
+      type = toFrench(attributes.category);
+    }
 
-      return {id, type, ...attributes};
-    });
+    return { id, type, ...attributes };
   }
 }

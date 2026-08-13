@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "application",
+    "id": "qobuz",
+    "attributes": {
+      "title": "Qobuz",
+      "overproduction": "🟢 curation humaine et interdiction de l'IA",
+      "offline": "🟢 l'écoute offline est une feature centrale",
+      "location": {
+        "lat": 48.894533,
+        "lng": 2.409630
+      },
+      "category": "Music",
+      "ownership": "🟢 permet l'achat de musique en plus du streaming",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Qobuz_logo_light.svg/langfr-330px-Qobuz_logo_light.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "description": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+    }
+  }
+}

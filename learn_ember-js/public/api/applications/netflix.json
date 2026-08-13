@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "application",
+    "id": "netflix",
+    "attributes": {
+      "title": "Netflix",
+      "overproduction": "🔴 production industrielle de contenus",
+      "offline": "🔴 limite fortement le visionnage hors-ligne",
+      "location": {
+        "lat": 37.235808,
+        "lng": -121.962375
+      },
+      "category": "Video",
+      "ownership": "🔴 abonnement sans aucun transfert",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/langfr-3840px-Netflix_2015_logo.svg.png?utm_source=fr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+    }
+  }
+}

@@ -10,4 +10,5 @@ Router.map(function () {});
 Router.map(function () {
   this.route('about');
   this.route('contact', { path: '/getting-in-touch' });
+  this.route('details', { path: '/application/:application_id' });
 });

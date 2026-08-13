@@ -10,6 +10,7 @@ module('Integration | Component | application', function (hooks) {
   test('it renders information about an application', async function (assert) {
     class State { 
       @tracked application = {
+        id: 'spotify',
         title: 'Spotify',
         overproduction: '🔴 favorise l\'IA dans la création musicale',
         offline: '🟠 permet l\'écoute hors-ligne mais nécessite une reconnexion régulière',
@@ -29,6 +30,7 @@ module('Integration | Component | application', function (hooks) {
     await render(<template><Application @application={{state.application}} /></template>);
     assert.dom('article').hasClass('application');
     assert.dom('article h3').hasText('Spotify');
+    assert.dom('article h3 a').hasAttribute('href', '/application/spotify');
     assert.dom('article .detail.overproduction').includesText('🔴 favorise l\'IA dans la création musicale');
     assert.dom('article .detail.personaldata').includesText('Catégorie:');
     assert.dom('article .detail.offline').includesText('🟠 permet l\'écoute hors-ligne mais nécessite une reconnexion régulière');

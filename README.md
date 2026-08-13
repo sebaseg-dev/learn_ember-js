@@ -109,3 +109,13 @@ export default class ImageComponent extends Component {
 ```
 
 > dans notre cas ci-dessus, le fait de placer le `alt` avant le `...attributes` permet à `...attributes` d'override `alt`. Cela n'aurait pas été possible dans l'autre cas.
+
+### Part 2 – Routing
+
+| Fichier | Rôle principal | Données manipulées |
+| ------ | --------------- | ----------------- |
+| router.js | Déclaration des URLs et des paramètres (:id). | URLs & noms de routes |
+| routes/*.js | Récupération des données via model(). | params -> retourne model |
+| templates/*.gjs | Réception de @model et transmission aux composants. | Contient {{outlet}} et @model |
+| components/*.gjs | Rendu HTML, style et interactions utilisateur. | Reçoit ses arguments (ex: @app) |
+
