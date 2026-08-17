@@ -1,6 +1,6 @@
 import { LinkTo } from '@ember/routing';
 import Jumbo from 'learn-ember-js/components/jumbo';
-import Application from 'learn-ember-js/components/application';
+import AppList from 'learn-ember-js/components/app-list';
 
 <template>
   <Jumbo>
@@ -17,11 +17,6 @@ import Application from 'learn-ember-js/components/application';
     <LinkTo @route="about" class="button">À propos</LinkTo>
   </Jumbo>
 
-  <div class="applications">
-    <ul class="results">
-      {{#each @model as |application|}}
-        <li><Application @application={{application}} /></li>
-      {{/each}}
-    </ul>
-  </div>
+  <AppList @applications={{@model}} />
+  
 </template>
