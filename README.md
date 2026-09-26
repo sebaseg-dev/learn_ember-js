@@ -1,3 +1,5 @@
+_archived on 2026-09-26_
+
 # learn_ember-js
 
 following official tutorial on https://guides.emberjs.com/release/tutorial/
